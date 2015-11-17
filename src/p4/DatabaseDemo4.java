@@ -33,13 +33,18 @@ public class DatabaseDemo4 {
                             " order by Students.[StudentName], Courses.[CourseName]");
 
             // Loop through the result set
-            while (resultSet.next())
+            int i = 0;
+            while (resultSet.next()) {
+                i++;
                 System.out.println("Student: " + resultSet.getString(1) +
                         "\t\tStudent ID: " + resultSet.getString(2) +
                         "\t\tCourse: " + resultSet.getString(3) +
                         "\t\tClass: " + resultSet.getString(4) + " " +
                         resultSet.getString(5) + "-" +
                         resultSet.getString(6));
+            }
+
+            System.out.println("\nRecord count = " + i + "\n");
 
             connection.close();
             System.out.println("Program finished without error");
