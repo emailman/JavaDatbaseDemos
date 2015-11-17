@@ -6,6 +6,7 @@
       <root url="jar://Z:/ucanaccess-libs/UCanAccess-3.0.2-bin/lib/commons-logging-1.1.1.jar!/" />
       <root url="jar://Z:/ucanaccess-libs/UCanAccess-3.0.2-bin/lib/hsqldb.jar!/" />
       <root url="jar://Z:/ucanaccess-libs/UCanAccess-3.0.2-bin/lib/jackcess-2.1.2.jar!/" />
+      <root url="jar://Z:/mysql Driver/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

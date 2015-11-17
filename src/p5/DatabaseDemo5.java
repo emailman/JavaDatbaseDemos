@@ -20,9 +20,9 @@ public class DatabaseDemo5 {
             Statement statement = connection.createStatement();
 
             // Delete all records from the three tables in the database
-            statement.execute("delete * from Enrollment");
-            statement.execute("delete * from Students");
-            statement.execute("delete * from Courses");
+            statement.execute("DELETE * FROM Enrollment");
+            statement.execute("DELETE * FROM Students");
+            statement.execute("DELETE * FROM Courses");
 
             connection.close();
             System.out.println("Program finished without error");
