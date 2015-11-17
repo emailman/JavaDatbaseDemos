@@ -20,17 +20,17 @@ public class DatabaseDemo4 {
 
             // Perform a query using a "select" statement
             ResultSet resultSet = statement.executeQuery
-                    ("select" +
+                    ("SELECT" +
                             " Students.[StudentName]," +
                             " Students.[StudentID]," +
                             " Courses.[CourseName]," +
                             " Courses.[Major]," +
                             " Courses.[CourseNumber]," +
                             " Courses.[Section]" +
-                            " from Courses, Students, Enrollment" +
-                            " where Enrollment.[StudentID] = Students.[StudentID]" +
-                            " and Enrollment.CRN=Courses.CRN" +
-                            " order by Students.[StudentName], Courses.[CourseName]");
+                            " FROM Courses, Students, Enrollment" +
+                            " WHERE Enrollment.[StudentID] = Students.[StudentID]" +
+                            " AND Enrollment.CRN=Courses.CRN" +
+                            " ORDER BY Students.[StudentName], Courses.[CourseName]");
 
             // Loop through the result set
             int i = 0;
