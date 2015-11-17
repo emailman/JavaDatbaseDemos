@@ -19,26 +19,26 @@ public class DatabaseDemo2 {
             Statement statement = connection.createStatement();
 
             // Insert three records into the Students table
-            statement.execute("insert into "
+            statement.execute("INSERT INTO "
                     + "Students (StudentID, StudentName, Major, Department) "
-                    + "values (700123456, 'John Jones', 'CT', 'CSC')");
-            statement.execute("insert into "
+                    + "VALUES (700123456, 'John Jones', 'CT', 'CSC')");
+            statement.execute("INSERT INTO "
                     + "Students (StudentID, StudentName, Major, Department) "
-                    + "values (700123457, 'Jim Jones', 'CT', 'CIS')");
-            statement.execute("insert into "
+                    + "VALUES (700123457, 'Jim Jones', 'CT', 'CIS')");
+            statement.execute("INSERT INTO "
                     + "Students (StudentID, StudentName, Major, Department) "
-                    + "values (700123458, 'Jane Jones', 'CT', 'CNE')");
+                    + "VALUES (700123458, 'Jane Jones', 'CT', 'CNE')");
 
             // Insert three records into the Courses table
-            statement.execute("insert into "
+            statement.execute("INSERT INTO "
                     + "Courses (CRN, CourseName, Major, CourseNumber, Section) "
-                    + "values (11594, 'Intro to Programming', 'CIS', 120, '401')");
-            statement.execute("insert into "
+                    + "VALUES (11594, 'Intro to Programming', 'CIS', 120, '401')");
+            statement.execute("INSERT INTO "
                     + "Courses (CRN, CourseName, Major, CourseNumber, Section) "
-                    + "values (18281, 'Intro to Programming', 'CIS', 120, '4L3')");
-            statement.execute("insert into "
+                    + "VALUES (18281, 'Intro to Programming', 'CIS', 120, '4L3')");
+            statement.execute("INSERT INTO "
                     + "Courses (CRN, CourseName, Major, CourseNumber, Section) "
-                    + "values (17451, 'Computer Science 1  ', 'CSC', 114, '401')");
+                    + "VALUES (17451, 'Computer Science 1  ', 'CSC', 114, '401')");
 
             connection.close();
             System.out.println("Program finished without error");
