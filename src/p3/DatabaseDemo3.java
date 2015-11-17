@@ -21,17 +21,17 @@ public class DatabaseDemo3 {
 
             // Insert four records into the Enrollment table
             statement.execute
-                    ("insert into Enrollment (CRN, StudentID) "
-                            + "values (17451, 700123456)");
+                    ("INSERT INTO Enrollment (CRN, StudentID) "
+                            + "VALUES (17451, 700123456)");
             statement.execute
-                    ("insert into Enrollment (CRN, StudentID) "
-                            + "values (17451, 700123457)");
+                    ("INSERT INTO Enrollment (CRN, StudentID) "
+                            + "VALUES (17451, 700123457)");
             statement.execute
-                    ("insert into Enrollment (CRN, StudentID) "
-                            + "values (11594, 700123458)");
+                    ("INSERT INTO Enrollment (CRN, StudentID) "
+                            + "VALUES (11594, 700123458)");
             statement.execute
-                    ("insert into Enrollment (CRN, StudentID) "
-                            + "values (11594, 700123456)");
+                    ("INSERT INTO Enrollment (CRN, StudentID) "
+                            + "VALUES (11594, 700123456)");
 
             connection.close();
             System.out.println("Program finished without error");
