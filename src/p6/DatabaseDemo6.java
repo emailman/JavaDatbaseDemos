@@ -12,11 +12,14 @@ public class DatabaseDemo6 {
     public static void main(String[] args) throws SQLException {
 
         try {
+            // This needs to be included in the External Libraries:
+            // mysql-connector-java-5.1.37-bin.jar
+            // for the following statement to work
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("Driver Loaded");
 
             Connection connection = DriverManager.getConnection
-                    ("jdbc:mysql://music.jigga.tk/db1?user=eric&password=Way2Go");
+                    ("jdbc:mysql://dtcc150java.tk/db-eric?user=emailman&password=Way2Go");
             System.out.println("Database connection OK");
 
             // Create a "select" statement
