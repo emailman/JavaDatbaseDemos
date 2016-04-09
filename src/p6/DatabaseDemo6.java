@@ -13,7 +13,7 @@ public class DatabaseDemo6 {
 
         try {
             // This needs to be included in the External Libraries:
-            // mysql-connector-java-5.1.37-bin.jar
+            // mysql-connector-java-5.1.38-bin.jar
             // for the following statement to work
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("Driver Loaded");
