@@ -19,7 +19,7 @@ public class DatabaseDemo6 {
             System.out.println("Driver Loaded");
 
             Connection connection = DriverManager.getConnection
-                    ("jdbc:mysql://dtcc150java.tk/db-eric?user=emailman&password=Way2Go");
+                    ("jdbc:mysql://phpmyadmin.cdgwdgkn5fuv.us-west-2.rds.amazonaws.com:3306/eric_db?user=eric&password=Way2GoHome");
             System.out.println("Database connection OK");
 
             // Create a "select" statement
