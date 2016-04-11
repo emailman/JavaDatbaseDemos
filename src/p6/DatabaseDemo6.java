@@ -20,8 +20,8 @@ public class DatabaseDemo6 {
 
             // Strings used for connecting to database
             String url = "jdbc:mysql://phpmyadmin.cdgwdgkn5fuv.us-west-2.rds.amazonaws.com:3306/eric_db";
-            String user = "eric";
-            String password = "Way2GoHome";
+            String user = "db_eric";
+            String password = "Way2Go";
 
             Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("Database connection OK");
