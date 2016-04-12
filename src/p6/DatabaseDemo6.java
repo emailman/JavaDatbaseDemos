@@ -11,19 +11,24 @@ public class DatabaseDemo6 {
 
     public static void main(String[] args) throws SQLException {
 
+        // Strings used for connecting to database
+        String url =
+                "jdbc:mysql:" +
+                        "//phpmyadmin.cdgwdgkn5fuv." +
+                        "us-west-2.rds.amazonaws.com:3306/eric_db";
+        String user = "db_eric";
+        String password = "Way2Go";
+
         try {
-            // This needs to be included in the External Libraries:
-            // mysql-connector-java-5.1.38-bin.jar
-            // for the following statement to work
+            /* This needs to be included in the External Libraries:
+             * mysql-connector-java-5.1.38-bin.jar
+             * for the following statement to work
+             */
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("Driver Loaded");
 
-            // Strings used for connecting to database
-            String url = "jdbc:mysql://phpmyadmin.cdgwdgkn5fuv.us-west-2.rds.amazonaws.com:3306/eric_db";
-            String user = "db_eric";
-            String password = "Way2Go";
-
-            Connection connection = DriverManager.getConnection(url, user, password);
+            Connection connection =
+                    DriverManager.getConnection(url, user, password);
             System.out.println("Database connection OK");
 
             // Create a "select" statement
@@ -32,7 +37,9 @@ public class DatabaseDemo6 {
 
             // Report results
             while (rs.next()) {
-                System.out.println(rs.getString(2) + " lives in unit " + rs.getString(3));
+                System.out.println
+                        (rs.getString(2) + " lives in unit " +
+                                rs.getString(3));
             }
 
             connection.close();
