@@ -19,6 +19,13 @@ public class DatabaseDemo6 {
         String user = "db_eric";
         String password = "Way2Go";
 
+        url =
+                "jdbc:mysql:" +
+                        "//phpmyadmin.cdgwdgkn5fuv." +
+                        "us-west-2.rds.amazonaws.com:3306/cis282_project";
+        user = "drew";
+        password = "dr2949";
+
         try {
             /* This needs to be included in the External Libraries:
              * mysql-connector-java-5.1.38-bin.jar
@@ -33,12 +40,12 @@ public class DatabaseDemo6 {
 
             // Create a "select" statement
             Statement s = connection.createStatement();
-            ResultSet rs = s.executeQuery("SELECT * FROM address");
+            ResultSet rs = s.executeQuery("SELECT * FROM EMPLOYEE");
 
             // Report results
             while (rs.next()) {
                 System.out.println
-                        (rs.getString(2) + " lives in unit " +
+                        (rs.getString(2) + " " +
                                 rs.getString(3));
             }
 
